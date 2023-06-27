@@ -1,0 +1,101 @@
+.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Round Box(Card) */
+.round-box {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Flex */
+.flex-box {
+  display: flex;
+}
+
+.flex-box-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Font */
+.font-amiri {
+  font-family: "Amiri", "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", Helvetica,sans-serif, Arial;
+}
+
+.fz-18 {
+  font-size: 18px !important;
+}
+
+.fz-30 {
+  font-size: 30px !important;
+}
+
+/* Button */
+.btn {
+  background-color: #222;
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.btn-round {
+  border-radius: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Section Title */
+.sec-header {
+  text-align: center;
+}
+
+.sec-tit {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.sec-desc {
+  line-height: 1.6;
+}
+
+/* Tab */
+.tab-menu {
+  position: relative;
+}
+
+.tab-menu input[type="radio"] {
+  display: none;
+}
+
+.tab-menu .tab {
+  cursor: pointer;
+}
+
+.tab-cont {
+  position: absolute;
+  display: none;
+}
+
+.tab-menu input[type="radio"]:checked ~ .tab-cont {
+  display: block;
+}
