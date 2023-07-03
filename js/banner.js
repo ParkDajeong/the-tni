@@ -15,3 +15,15 @@ $(document).ready(function(){
     cssEase: 'linear',
   });
 });
+
+const header = document.querySelector("header");
+
+// Header Scroll Event
+window.addEventListener("scroll", () => {
+  if(window.scrollY >= 200) {
+    if(header.classList.contains("on")) return;
+    header.classList.add("on");
+  } else {
+    header.classList.remove("on");
+  }
+});
