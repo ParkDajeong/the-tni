@@ -520,10 +520,6 @@ overflow: hidden;
   color: #fff;
 }
 
-.trend-img {
-  
-}
-
 .trend-img img {
   width: 100%;
   height: auto;
@@ -633,9 +629,36 @@ overflow: hidden;
   background: url(../assets/product/all/product_all_01.jpg) no-repeat 0 0 / 100% auto;
 }
 
+.product:nth-of-type(2) .product-link {
+  background-image: url(../assets/product/all/product_all_02.jpg);
+}
+
+.product:nth-of-type(3) .product-link {
+  background-image: url(../assets/product/all/product_all_03.jpg);
+}
+
+.product:nth-of-type(4) .product-link {
+  background-image: url(../assets/product/all/product_all_04.jpg);
+}
+
+.product:nth-of-type(5) .product-link {
+  background-image: url(../assets/product/all/product_all_05.jpg);
+}
+
+.product:nth-of-type(6) .product-link {
+  background-image: url(../assets/product/all/product_all_06.jpg);
+}
+
+.product:nth-of-type(7) .product-link {
+  background-image: url(../assets/product/all/product_all_07.jpg);
+}
+
+.product:nth-of-type(8) .product-link {
+  background-image: url(../assets/product/all/product_all_08.jpg);
+}
+
 .product-info {
   justify-content: center;
-  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -657,8 +680,14 @@ overflow: hidden;
 }
 
 .product-name {
-  font-weight: 600;
+  display: -webkit-box;
   margin-bottom: 30px;
+  font-weight: 600;
+  overflow: hidden;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /* Brand Section */
