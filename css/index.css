@@ -332,6 +332,11 @@ overflow: hidden;
   border-bottom: 1px solid #e6e6e6;
 }
 
+.partner-sec .sec-cont {
+  height: 100%;
+  align-items: center;
+}
+
 .board-link {
   justify-content: space-between;
   padding: 6px 0;
