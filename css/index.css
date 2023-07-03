@@ -667,7 +667,13 @@ overflow: hidden;
   padding: 20px;
   text-align: center;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
   background-color: rgba(255,255,255,.8);
+}
+
+.product-link:hover .product-info {
+  opacity: 1;
 }
 
 .product-desc {
