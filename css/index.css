@@ -553,7 +553,7 @@ overflow: hidden;
 
 .product-tab {
   justify-content: center;
-  height: 1006px;
+  padding-bottom: 50.7356%;
 }
 
 .product-tab .tab {
@@ -601,6 +601,7 @@ overflow: hidden;
 .product-list {
   flex-wrap: wrap;
   padding: 0 12px;
+  margin: -12px 0;
 }
 
 .product {
