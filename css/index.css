@@ -419,6 +419,26 @@ overflow: hidden;
   background: url(../assets/team/what-bg.png) no-repeat center;
 }
 
+.team:nth-of-type(2) .team-link {
+  background-image: url(../assets/team/what-bg2.png);
+}
+
+.team:nth-of-type(3) .team-link {
+  background-image: url(../assets/team/what-bg3.png);
+}
+
+.team:nth-of-type(4) .team-link {
+  background-image: url(../assets/team/what-bg4.png);
+}
+
+.team:nth-of-type(5) .team-link {
+  background-image: url(../assets/team/what-bg5.png);
+}
+
+.team:nth-of-type(6) .team-link {
+  background-image: url(../assets/team/what-bg6.png);
+}
+
 .team-info {
   position: absolute;
   top: 0;
