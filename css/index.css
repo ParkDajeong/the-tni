@@ -23,6 +23,10 @@ header .inner {
   padding: 0 15px;
 }
 
+.menu {
+  margin-right: -35px;
+}
+
 .menu-item {
   position: relative;
 }
