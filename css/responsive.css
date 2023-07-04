@@ -1,0 +1,27 @@
+@media screen and (max-width: 1200px) {
+  .pc {
+    display: none;
+  }
+
+  .mb {
+    display: block;
+  }
+
+  header .inner {
+    background-color: #fff;
+    height: 50px;
+    padding: 0;
+  }
+
+  .logo {
+    /* margin-left: auto; */
+    order: 1;
+    width: 80px;
+    height: 50px;
+  }
+
+  .menu {
+    /* 임시 */
+    display: none;
+  }
+}

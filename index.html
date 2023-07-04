@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- Slick JS -->
@@ -30,10 +31,18 @@
   <header>
     <div class="inner flex-box">
       <h1 class="logo">
-        <a href="#">
-          <img src="assets/logo.png" alt="티앤아이">
+        <a href="#" class="link-logo flex-box">
+          <figure>
+            <img src="assets/logo.png" class="pc" alt="티앤아이">
+            <img src="assets/logo-sm.png" class="mb" alt="티앤아이">
+          </figure>
         </a>
-      </h1>
+      </h1> <!-- //logo -->
+      <div class="btn-menu-wrapper mb">
+        <button type="button" class="btn-mb-menu" title="주메뉴 열기">
+          <span></span>
+        </button>
+      </div>
       <nav>
         <h2 class="blind">주메뉴</h2>
         <ul class="menu flex-box">
