@@ -1,12 +1,4 @@
 @media screen and (max-width: 1200px) {
-  .pc {
-    display: none;
-  }
-
-  .mb {
-    display: block;
-  }
-
   /* ===== Header ===== */
   header .inner {
     background-color: #fff;
@@ -14,8 +6,15 @@
     padding: 0;
   }
 
+  header .pc {
+    display: none;
+  }
+
+  header .mb {
+    display: block;
+  }
+
   .logo {
-    /* margin-left: auto; */
     order: 1;
     width: 80px;
     height: 50px;
@@ -118,6 +117,10 @@
   .visual-btn .btn::after {
     width: 14px;
     height: 6px;
+  }
+
+  .main-menu.mb {
+    display: block;
   }
 }
 
