@@ -7,6 +7,7 @@
     display: block;
   }
 
+  /* ===== Header ===== */
   header .inner {
     background-color: #fff;
     height: 50px;
@@ -23,5 +24,107 @@
   .menu {
     /* 임시 */
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* ===== Common ===== */
+  .btn {
+    padding: 10px 12px;
+  }
+
+  .btn-round {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* ===== Main ===== */
+  main {
+    padding-top: 50px;
+  }
+  /* visual section */
+  .visual-cont {
+    height: 460px;
+  }
+
+  .visual-tit {
+    font-size: 50px;
+  }
+
+  .visual-desc {
+    font-size: 18px;
+  }
+
+  /* Slick Dots Custom */
+  .banner-dots {
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* ===== Main ===== */
+  /* visual section */
+  .visual-cont {
+    height: calc(100vh - 50px - 90px);
+  }
+
+  .visual-cont:nth-child(1) {
+    background-image: url(../assets/banner/v2-sm.png);
+  }
+
+  .visual-cont:nth-child(2) {
+    background-image: url(../assets/banner/v1-sm.png);
+  }
+  
+  .visual-cont:nth-child(3) {
+    background-image: url(../assets/banner/v3-sm.png);
+  }
+  
+  .visual-cont:nth-child(4) {
+    background-image: url(../assets/banner/v4-sm.png);
+  }
+  
+  .visual-cont:nth-child(5) {
+    background-image: url(../assets/banner/v5-sm.png);
+  }
+  
+  .visual-cont:nth-child(6) {
+    background-image: url(../assets/banner/v6-sm.png);
+  }
+
+  .visual-inner {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+  }
+  
+  .visual-tit {
+    font-size: 38px;
+  }
+
+  .visual-desc {
+    font-size: 16px;
+  }
+
+  .visual-btn {
+    margin-top: 20px;
+  }
+
+  .visual-btn .btn {
+    font-size: 14px;
+  }
+
+  .visual-btn .btn::after {
+    width: 14px;
+    height: 6px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ===== Main ===== */
+  /* visual section */
+  .visual-btn .btn {
+    min-width: 165px;
   }
 }

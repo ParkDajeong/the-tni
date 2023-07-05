@@ -13,6 +13,12 @@ $(document).ready(function(){
     arrows: false,
     fade: true,
     cssEase: 'linear',
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        dots: false,
+      }
+    }],
   });
 });
 
