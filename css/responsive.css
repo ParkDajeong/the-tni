@@ -88,6 +88,31 @@
     bottom: 0;
     opacity: 1;
   }
+
+  /* brand section */
+  .brand-nav {
+    padding: 25px;
+  }
+
+  .our-brand-nav {
+    padding-left: 0;
+  }
+
+  .domestic-brand-nav {
+    padding-right: 0;
+  }
+
+  .our-brand-nav .brand-list {
+    gap: 8px;
+  }
+
+  .brand-logo {
+    width: calc(50% - 4px);
+  }
+
+  .brand-link {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -224,6 +249,61 @@
   .trend-sec .sec-desc {
     font-size: 14px !important;
   }
+
+  /* brand section */
+  .brand-sec .container {
+    flex-wrap: wrap;
+  }
+
+  .brand-nav {
+    position: relative;
+    padding: 15px 0;
+  }
+
+  .brand-nav::before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: -15px;
+    bottom: 0;
+    width: calc(100% + 30px);
+    height: 1px;
+    background-color: #e6e6e6;
+  }
+
+  .our-brand-nav {
+    flex: 0 0 100%;
+    padding-bottom: 20px;
+  }
+
+  .our-brand-nav::before {
+    display: block;
+  }
+
+  .imported-brand-nav {
+    flex: 0 0 75%;
+  }
+
+  .brand-nav ~ .brand-nav {
+    border-left: 0;
+  }
+
+  .brand-nav-tit {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .our-brand-nav .brand-list {
+    gap: 4px;
+  }
+
+  .brand-logo {
+    width: calc(25% - 4px);
+  }
+
+  .brand-link {
+    padding: 2px 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -269,5 +349,34 @@
 
   .team:nth-of-type(6) .team-link {
     background-image: url(../assets/team/what-bg6-sm.png);
+  }
+
+  /* brand section */
+  .brand-nav {
+    flex: 0 0 100% !important;
+  }
+
+  .brand-logo {
+    width: calc(33.3333% - 4px);
+  }
+
+  .imported-brand-nav::before {
+    display: block;
+  }
+
+  .domestic-brand-nav .brand-list {
+    display: flex;
+  }
+
+  .domestic-brand-nav .brand {
+    width: 33.3333%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  /* ===== Main ===== */
+  /* brand section */
+  .brand-logo {
+    width: calc(50% - 2px);
   }
 }

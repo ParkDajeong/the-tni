@@ -837,15 +837,15 @@ margin-top: 140px;
 }
 
 .brand-nav {
-  padding: 45px 35px;
+  padding: 40px 35px;
 }
 
-.brand-nav:nth-of-type(1) {
+.our-brand-nav {
   flex: 0 0 33.3333%;
   padding-left: 0;
 }
 
-.brand-nav:nth-of-type(3) {
+.domestic-brand-nav {
   flex: 0 0 25%;
   padding-right: 0;
 }
@@ -862,52 +862,56 @@ margin-top: 140px;
 
 .brand-list {
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.our-brand-nav .brand-list {
+  gap: 14px;
+}
+
+.imported-brand-nav .brand-list {
+  flex-wrap: wrap;
 }
 
 .brand-logo {
-  /* width: 50%; */
-  /* padding: 7px; */
-  padding: 7px 0;
+  width: calc(50% - 7px);
 }
 
-.brand-logo .brand-link {
-  background: url(../assets/brand/parner-logo.png) no-repeat center;
+.brand-logo-link {
+  background: url(../assets/brand/parner-logo.png) no-repeat center / contain;
   display: block;
-  width: 170px;
-  height: 58px;
+  padding-top: 34.1176%;
   border: 1px solid #e6e6e6;
 }
 
-.brand-logo:nth-of-type(2) .brand-link {
+.brand-logo:nth-of-type(2) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo2.png);
 }
 
-.brand-logo:nth-of-type(3) .brand-link {
+.brand-logo:nth-of-type(3) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo3.png);
 }
 
-.brand-logo:nth-of-type(4) .brand-link {
+.brand-logo:nth-of-type(4) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo4.png);
 }
 
-.brand-logo:nth-of-type(5) .brand-link {
+.brand-logo:nth-of-type(5) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo5.png);
 }
 
-.brand-logo:nth-of-type(6) .brand-link {
+.brand-logo:nth-of-type(6) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo6.png);
 }
 
-.brand-logo:nth-of-type(7) .brand-link {
+.brand-logo:nth-of-type(7) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo7.png);
 }
 
-.brand-logo:nth-of-type(8) .brand-link {
+.brand-logo:nth-of-type(8) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo8.png);
 }
 
-.brand-logo:nth-of-type(9) .brand-link {
+.brand-logo:nth-of-type(9) .brand-logo-link {
   background-image: url(../assets/brand/parner-logo9.png);
 }
 
@@ -916,17 +920,13 @@ margin-top: 140px;
   padding: 4px 0;
 }
 
+.imported-brand-nav .brand {
+  width: 33.3333%;
+}
+
 .brand-link {
   display: block;
   padding: 4px 0;
-}
-
-.import-brand-list {
-  flex-wrap: wrap;
-}
-
-.import-brand-list .brand {
-  width: 33.3333%;
 }
 
 /* Footer */
