@@ -82,6 +82,12 @@
   .team-info {
     padding: 25px;
   }
+
+  /* trend section */
+  .trend-text {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -204,6 +210,19 @@
   .team-desc {
     margin-bottom: 15px;
     font-size: 14px;
+  }
+
+  /* trend section */
+  .trend-sec .sec-header {
+    margin-bottom: 50px;
+  }
+
+  .trend-sec .sec-tit {
+    margin-bottom: 10px;
+  }
+
+  .trend-sec .sec-desc {
+    font-size: 14px !important;
   }
 }
 
