@@ -406,18 +406,26 @@ margin-top: 140px;
 /* Notice Section */
 .board-wrap {
   width: 100%;
-  /* margin: 0 -30px; */
 }
 
 .board-sec {
   position: relative;
   width: 50%;
-  padding: 15px 30px;
+  padding-right: 30px;
+}
+
+.partner-sec {
+  padding-right: 0;
+  padding-left: 30px;
 }
 
 .board-sec .sec-header {
   margin-bottom: 20px;
   text-align: left;
+}
+
+.board-sec .sec-tit {
+  font-size: 30px;
 }
 
 .board-wrap .sec-cont {
@@ -439,6 +447,7 @@ margin-top: 140px;
 
 .post-tit {
   flex: 1;
+  margin-right: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -446,8 +455,9 @@ margin-top: 140px;
 
 .board-btn {
   position: absolute;
-  top: 20px;
+  top: 0;
   right: 40px;
+  transform: translateY(40%);
 }
 
 .board-btn .link-more {
