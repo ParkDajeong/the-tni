@@ -304,6 +304,20 @@
   .brand-link {
     padding: 2px 0;
   }
+
+  /* ===== Footer ===== */
+  footer {
+    padding: 30px 0 50px;
+  }
+
+  .footer-nav {
+    margin-bottom: 10px;
+  }
+
+  address p,
+  .company-info .text-wrap {
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -378,5 +392,10 @@
   /* brand section */
   .brand-logo {
     width: calc(50% - 2px);
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    overflow: hidden;
   }
 }

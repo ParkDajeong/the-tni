@@ -943,6 +943,7 @@ footer {
 .footer-nav-item {
   position: relative;
   padding: 0 15px;
+  word-break: keep-all;
 }
 
 .footer-nav-item ~ .footer-nav-item::before {
@@ -966,11 +967,16 @@ address {
   margin-left: -6px;
   color: #999;
   font-size: 14px;
+  word-break: keep-all;
 }
 
 address p,
 .company-info .text-wrap {
   padding: 6px;
+}
+
+.company-info {
+  flex-wrap: wrap;
 }
 
 .company-info-tit {
