@@ -24,6 +24,12 @@
     /* 임시 */
     display: none;
   }
+
+  /* ===== Main ===== */
+  /* story section */
+  .story-sec .sec-cont::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
