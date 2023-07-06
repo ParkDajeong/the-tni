@@ -47,6 +47,11 @@
   main {
     padding-top: 50px;
   }
+
+  .main-sec {
+    padding: 100px 0;
+  }
+
   /* visual section */
   .visual-cont {
     height: 460px;
@@ -64,9 +69,30 @@
   .banner-dots {
     bottom: 30px;
   }
+
+  /* team section */
+  .team-list {
+    margin: -8px;
+  }
+
+  .team {
+    padding: 8px;
+  }
+
+  .team-info {
+    padding: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .main-sec {
+    padding: 60px 0;
+  }
+
+  .sec-tit {
+    font-size: 32px;
+  }
+
   /* ===== Main ===== */
   /* visual section */
   .visual-cont {
@@ -129,7 +155,7 @@
     display: block;
   }
 
-  /* Notice Section */
+  /* notice section */
   .board-wrap {
     flex-direction: column;
   }
@@ -155,12 +181,74 @@
     right: 0;
     transform: translateY(80%);
   }
+
+  /* team section */
+  .team-sec .sec-header {
+    margin-bottom: 20px;
+  }
+
+  .team-list {
+    margin: -5px;
+  }
+
+  .team {
+    width: 50%;
+    padding: 5px;
+  }
+
+  .team-name {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .team-desc {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .round-box {
+    border-radius: 20px;
+  }
+
   /* ===== Main ===== */
   /* visual section */
   .visual-btn .btn {
     min-width: 165px;
+  }
+
+  /* team section */
+  .team {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .team-link {
+    padding-bottom: 55.1724%;
+  }
+
+  .team:nth-of-type(1) .team-link {
+    background-image: url(../assets/team/what-bg-sm.png);
+  }
+
+  .team:nth-of-type(2) .team-link {
+    background-image: url(../assets/team/what-bg2-sm.png);
+  }
+
+  .team:nth-of-type(3) .team-link {
+    background-image: url(../assets/team/what-bg3-sm.png);
+  }
+
+  .team:nth-of-type(4) .team-link {
+    background-image: url(../assets/team/what-bg4-sm.png);
+  }
+
+  .team:nth-of-type(5) .team-link {
+    background-image: url(../assets/team/what-bg5-sm.png);
+  }
+
+  .team:nth-of-type(6) .team-link {
+    background-image: url(../assets/team/what-bg6-sm.png);
   }
 }

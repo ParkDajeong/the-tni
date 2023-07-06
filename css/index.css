@@ -520,7 +520,7 @@ margin-top: 140px;
   position: relative;
   display: block;
   padding-bottom: 100%;
-  background: url(../assets/team/what-bg.png) no-repeat center;
+  background: url(../assets/team/what-bg.png) no-repeat center / contain;
 }
 
 .team:nth-of-type(2) .team-link {
@@ -562,7 +562,9 @@ margin-top: 140px;
 .team-name {
   display: block;
   margin-bottom: 10px;
+  font-size: 30px;
   font-weight: bold;
+  word-break: keep-all;
 }
 
 .team-desc {
