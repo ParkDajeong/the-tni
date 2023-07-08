@@ -320,8 +320,7 @@ margin-top: 140px;
 }
 
 .video-tab {
-  justify-content: center;
-  height: 450px;
+  /* justify-content: center; */
 }
 
 .video-item {
@@ -334,6 +333,7 @@ margin-top: 140px;
   position: relative;
   width: 100%;
   padding: 22px 45px 22px 20px;
+  font-size: 18px;
   font-weight: 600;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -603,12 +603,20 @@ margin-top: 140px;
   margin-bottom: 15px;
 }
 
+.trend-sec .sec-cont {
+  position: relative;
+  width: 100%;
+  padding-bottom: 98%;
+}
+
 .trend-list {
-  /* flex-wrap: wrap; */
-  /* display: grid; */
+  position: absolute;
+  left: 0;
+  top: 0;
   margin: -12px;
-  /*  */
-  height: 1168px;
+  max-width: calc(100% + 12px * 2);
+  max-height: 100%;
+  min-height: -webkit-fill-available;
   display: flex;
   flex-flow: column wrap;
 }
@@ -619,10 +627,8 @@ margin-top: 140px;
 }
 
 .trend-link {
-  /* background: url(../assets/trend/trend_bg_01.png) no-repeat center; */
   position: relative;
   display: block;
-  /* padding-top: 100%; */
   color: #fff;
 }
 
@@ -639,7 +645,8 @@ margin-top: 140px;
   left: 0;
   bottom: -100px;
   padding: 0 25px 25px;
-  background: linear-gradient(to top, rgba(0, 0, 0, .7), transparent);
+  font-size: 18px;
+  background: linear-gradient(to top, rgba(0, 0, 0, .8), transparent);
   opacity: 0;
   transition: .5s ease-in-out;
   transition-property: bottom, opacity;

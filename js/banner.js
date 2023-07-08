@@ -26,7 +26,7 @@ const header = document.querySelector("header");
 const mediaSize1200 = window.matchMedia("(max-width: 1200px)");
 
 const onScrolled = () => {
-  console.log("hi");
+  // console.log("hi");
   if(window.scrollY >= 200) {
     if(header.classList.contains("on")) return;
     header.classList.add("on");
@@ -38,12 +38,12 @@ const onScrolled = () => {
 // 함수명 추후 수정
 // or 함수 분리??
 const toggleWindowEvent = (e) => {
-  console.log(e.matches);
+  // console.log(e.matches);
   if(!e.matches) {
-    console.log(false);
+    // console.log(false);
     window.addEventListener("scroll", onScrolled);
   } else {
-    console.log(true);
+    // console.log(true);
     window.removeEventListener("scroll", onScrolled);
   }
 }
@@ -62,6 +62,6 @@ toggleWindowEvent(mediaSize1200);
 // });
 
 mediaSize1200.addEventListener("change", () => {
-  console.log("이거 됨??");
+  // console.log("이거 됨??");
   toggleWindowEvent(mediaSize1200);
 });
