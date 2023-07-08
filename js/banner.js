@@ -26,7 +26,6 @@ const header = document.querySelector("header");
 const mediaSize1200 = window.matchMedia("(max-width: 1200px)");
 
 const onScrolled = () => {
-  // console.log("hi");
   if(window.scrollY >= 200) {
     if(header.classList.contains("on")) return;
     header.classList.add("on");
@@ -66,26 +65,55 @@ mediaSize1200.addEventListener("change", () => {
   toggleWindowEvent(mediaSize1200);
 });
 
-// Product Section Auto Height
+
+
 const getVerticalMargin = (el) => {
   const style = window.getComputedStyle(el);
+
   return parseInt(style.marginTop) + parseInt(style.marginBottom);
 };
 
 const getElementHeight = (el) => {
   const height = el.getBoundingClientRect().height;
   const margin = getVerticalMargin(el);
+
   return height + margin;
 };
 
-const setProductSectionHeight = (num) => {
-  const element = document.querySelector(".product-sec .sec-cont");
-  element.style.paddingBottom = `${num}px`
-};
+const setPaddingBottom = (el, num) => el.style.paddingBottom = `${num}px`;
+const setHeight = (el, height) => el.style.height = `${height}px`;
 
-const tabContent = document.querySelector(".product-tab .tab-cont");
-setProductSectionHeight(getElementHeight(tabContent));
+// Story Section Auto Height
+const setStorySectionHeight = () => {
+  const tabCont = document.querySelector(".video-tab .tab-cont");
+  const secCont = document.querySelector(".story-sec .sec-cont");
+  
+  if(window.innerWidth > 992) {
+    setHeight(secCont, getElementHeight(tabCont));
+  } else {
+    secCont.style.height = "auto";
+  }
+}
+
+// Product Section Auto Height
+const setProductSectionHeight = () => {
+  const tabCont = document.querySelector(".product-tab .tab-cont");
+  const secCont = document.querySelector(".product-sec .sec-cont");
+
+  setPaddingBottom(secCont, getElementHeight(tabCont));
+}
+
+// Browser Load Event
+setStorySectionHeight();
+setProductSectionHeight();
+
+// Browser Resize Event
+let delay = 300;
+let timer = null;
 
 window.addEventListener("resize", () => {
-  setProductSectionHeight(getElementHeight(tabContent));
+  clearTimeout(timer);
+  timer = setTimeout(setStorySectionHeight, delay);
+
+  setProductSectionHeight();
 });

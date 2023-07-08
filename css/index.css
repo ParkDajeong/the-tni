@@ -320,7 +320,8 @@ margin-top: 140px;
 }
 
 .video-tab {
-  /* justify-content: center; */
+  justify-content: center;
+  height: 100%;
 }
 
 .video-item {

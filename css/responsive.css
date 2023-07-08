@@ -157,7 +157,12 @@
 @media screen and (max-width: 992px) {
   /* ===== Main ===== */
   /* story section */
+  .story-sec {
+    margin-top: 0;
+  }
+
   .video-tab {
+    justify-content: flex-start;
     padding-bottom: 56.2497%;
   }
 
