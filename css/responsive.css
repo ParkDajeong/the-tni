@@ -30,6 +30,11 @@
   .story-sec .sec-cont::before {
     display: none;
   }
+
+  /* product section */
+  .product {
+    width: 33.3333%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -91,6 +96,36 @@
   .trend-text {
     bottom: 0;
     opacity: 1;
+  }
+
+  /* product section */
+  .product {
+    padding: 20px 12px;
+  }
+
+  .product-info {
+    position: static;
+    width: 100%;
+    padding: 10px 0 0;
+    text-align: left;
+    border-radius: 0;
+    overflow: visible;
+    opacity: 1;
+    transform: none;
+  }
+
+  .product-desc {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .product-name {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .product-sec .team-more {
+    display: none;
   }
 
   /* brand section */
@@ -305,6 +340,19 @@
     font-size: 16px;
   }
 
+  /* product section */
+  .product-sec .sec-header {
+    margin-bottom: 20px;
+  }
+
+  .product-tab .tab-cont {
+    margin-top: 35px;
+  }
+
+  .product {
+    width: 50%;
+  }
+
   /* brand section */
   .brand-sec .container {
     flex-wrap: wrap;
@@ -432,6 +480,19 @@
   .trend {
     width: 50%;
     padding: 4px;
+  }
+
+  /* product section */
+  .product {
+    padding: 14px 2px;
+  }
+
+  .product-desc {
+    font-size: 14px;
+  }
+
+  .product-name {
+    font-size: 16px;
   }
 
   /* brand section */

@@ -65,3 +65,27 @@ mediaSize1200.addEventListener("change", () => {
   // console.log("이거 됨??");
   toggleWindowEvent(mediaSize1200);
 });
+
+// Product Section Auto Height
+const getVerticalMargin = (el) => {
+  const style = window.getComputedStyle(el);
+  return parseInt(style.marginTop) + parseInt(style.marginBottom);
+};
+
+const getElementHeight = (el) => {
+  const height = el.getBoundingClientRect().height;
+  const margin = getVerticalMargin(el);
+  return height + margin;
+};
+
+const setProductSectionHeight = (num) => {
+  const element = document.querySelector(".product-sec .sec-cont");
+  element.style.paddingBottom = `${num}px`
+};
+
+const tabContent = document.querySelector(".product-tab .tab-cont");
+setProductSectionHeight(getElementHeight(tabContent));
+
+window.addEventListener("resize", () => {
+  setProductSectionHeight(getElementHeight(tabContent));
+});

@@ -670,7 +670,6 @@ margin-top: 140px;
 
 .product-tab {
   justify-content: center;
-  padding-bottom: 50.7356%;
 }
 
 .product-tab .tab {
@@ -729,74 +728,19 @@ margin-top: 140px;
 .product-link {
   position: relative;
   display: block;
-  padding-top: 100%;
-  background: no-repeat 0 0 / 100% auto;
 }
 
-/* product-all */
-.product-all:nth-of-type(1) .product-link {
-  background-image: url(../assets/product/all/product_all_01.jpg);
+.product-img {
+  position: relative;
+  padding-bottom: 100%;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
-.product-all:nth-of-type(2) .product-link {
-  background-image: url(../assets/product/all/product_all_02.jpg);
-}
-
-.product-all:nth-of-type(3) .product-link {
-  background-image: url(../assets/product/all/product_all_03.jpg);
-}
-
-.product-all:nth-of-type(4) .product-link {
-  background-image: url(../assets/product/all/product_all_04.jpg);
-}
-
-.product-all:nth-of-type(5) .product-link {
-  background-image: url(../assets/product/all/product_all_05.jpg);
-}
-
-.product-all:nth-of-type(6) .product-link {
-  background-image: url(../assets/product/all/product_all_06.jpg);
-}
-
-.product-all:nth-of-type(7) .product-link {
-  background-image: url(../assets/product/all/product_all_07.jpg);
-}
-
-.product-all:nth-of-type(8) .product-link {
-  background-image: url(../assets/product/all/product_all_08.jpg);
-}
-
-/* product-kanuda */
-.product-kanuda:nth-of-type(1) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_01.jpg);
-}
-
-.product-kanuda:nth-of-type(2) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_02.jpg);
-}
-
-.product-kanuda:nth-of-type(3) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_03.jpg);
-}
-
-.product-kanuda:nth-of-type(4) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_04.jpg);
-}
-
-.product-kanuda:nth-of-type(5) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_05.jpg);
-}
-
-.product-kanuda:nth-of-type(6) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_06.jpg);
-}
-
-.product-kanuda:nth-of-type(7) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_07.png);
-}
-
-.product-kanuda:nth-of-type(8) .product-link {
-  background-image: url(../assets/product/kanuda/product_kanuda_08.png);
+.product-img img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .product-info {
@@ -808,8 +752,10 @@ margin-top: 140px;
   height: calc(100% - 40px);
   padding: 20px;
   text-align: center;
-  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  overflow: hidden;
   opacity: 0;
+  transform: translate(-50%, -50%);
   transition: opacity .3s ease-in-out;
   background-color: rgba(255,255,255,.8);
 }
@@ -821,6 +767,7 @@ margin-top: 140px;
 .product-desc {
   margin-bottom: 5px;
   color: #7e7e7e;
+  font-size: 18px;
   line-height: 31px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -830,6 +777,7 @@ margin-top: 140px;
 .product-name {
   display: -webkit-box;
   margin-bottom: 30px;
+  font-size: 30px;
   font-weight: 600;
   overflow: hidden;
   word-break: keep-all;
