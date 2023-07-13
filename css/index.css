@@ -50,18 +50,41 @@ header .inner {
   margin: 0 auto;
 }
 
+.btn-mb-menu span {
+  transition: background-color .6s;
+}
+
 .btn-mb-menu span::before,
 .btn-mb-menu span::after {
   content: "";
   position: absolute;
+  transition: margin-top .3s .3s, transform .3s;
+}
+
+.btn-mb-menu.on span {
+  background-color: transparent;
+}
+
+.btn-mb-menu.on span::before,
+.btn-mb-menu.on span::after {
+  margin-top: 0;
+  transition: margin-top .3s, transform .3s .3s;
 }
 
 .btn-mb-menu span::before {
-  transform: translateY(-10px);
+  margin-top: -10px;
+}
+
+.btn-mb-menu.on span::before {
+  transform: rotate(45deg);
 }
 
 .btn-mb-menu span::after {
-  transform: translateY(10px);
+  margin-top: 10px;
+}
+
+.btn-mb-menu.on span::after {
+  transform: rotate(-45deg);
 }
 
 .menu {
@@ -76,6 +99,7 @@ header .inner {
   display: block;
   height: 100%;
   padding: 35px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -120,7 +144,7 @@ nav:hover .sub-menu {
   transition-property: opacity, visibility;
 }
 
-nav:hover + .menu-bg {
+.nav-wrapper:hover + .menu-bg {
   visibility: visible;
   opacity: 1;
 }

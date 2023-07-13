@@ -3,6 +3,11 @@ const storyTabCont = document.querySelector(".video-tab .tab-cont");
 const storySecCont = document.querySelector(".story-sec .sec-cont");
 const productTabCont = document.querySelector(".product-tab .tab-cont");
 const productSecCont = document.querySelector(".product-sec .sec-cont");
+const menuToggleBtn = document.querySelector(".btn-mb-menu");
+const mobileNav = document.querySelector(".nav-wrapper");
+const menuCategory = document.querySelectorAll(".menu-link");
+let delay = 300;
+let timer = null;
 
 const getVerticalMargin = (el) => {
   const style = window.getComputedStyle(el);
@@ -54,15 +59,37 @@ const setProductSectionHeight = () => {
   setPaddingBottom(productSecCont, height);
 }
 
+const removeClass = (target, arr, className) => {
+  arr.forEach((item) => {
+    if(item !== target) {
+      item.parentElement.classList.remove(className + "")
+    }
+  });
+};
+
+menuToggleBtn.addEventListener("click", (e) => {
+  menuToggleBtn.classList.toggle("on");
+  mobileNav.classList.toggle("on");
+  removeClass("", menuCategory, "on");
+});
+
+// Mobile Nav Accordion Event
+menuCategory.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const _this = e.target;
+    
+    removeClass(_this, menuCategory, "on");
+    _this.parentElement.classList.toggle("on");
+  });
+});
+
 // Browser Load Event
 toggleHeaderScrollEvent();
 setStorySectionHeight();
 setProductSectionHeight();
 
 // Browser Resize Event
-let delay = 300;
-let timer = null;
-
 window.addEventListener("resize", () => {
   clearTimeout(timer);
   timer = setTimeout(() => {
